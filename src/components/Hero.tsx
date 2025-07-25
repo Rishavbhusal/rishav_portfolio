@@ -36,17 +36,27 @@ const Hero = () => {
                 <Button 
                   size="lg" 
                   className="bg-gradient-web3 hover:scale-105 transition-transform duration-300 text-white border-0"
+                  asChild
                 >
-                  <Mail className="mr-2 h-5 w-5" />
-                  Get In Touch
+                  <a href="mailto:rishav12@gmail.com">
+                    <Mail className="mr-2 h-5 w-5" />
+                    Get In Touch
+                  </a>
                 </Button>
                 <Button 
                   variant="outline" 
                   size="lg"
                   className="border-web3-cyan text-web3-cyan hover:bg-web3-cyan/10 glow-hover"
+                  asChild
                 >
-                  <ExternalLink className="mr-2 h-5 w-5" />
-                  View Projects
+                  <a
+                    href="https://github.com/rishavbhusal"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <ExternalLink className="mr-2 h-5 w-5" />
+                    View Projects
+                  </a>
                 </Button>
               </div>
               
@@ -66,7 +76,9 @@ const Hero = () => {
                   <Linkedin className="h-6 w-6" />
                 </a>
                 <a 
-                  href="#"
+                  href="https://github.com/rishavbhusal"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="p-3 rounded-full bg-card border border-border hover:border-web3-pink glow-hover"
                 >
                   <Github className="h-6 w-6" />
